@@ -12,10 +12,8 @@
         android:theme="@style/Theme.Course_Hub_Manager"
         tools:targetApi="31">
 
-        <!-- RegisterActivity -->
         <activity android:name="com.example.course_hub_manager.view.RegisterActivity" android:exported="true"/>
 
-        <!-- MainActivity (Set as the LAUNCHER Activity) -->
         <activity android:name="com.example.course_hub_manager.MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,15 +21,12 @@
             </intent-filter>
         </activity>
 
-        <!-- CourseContentActivity -->
         <activity android:name="com.example.course_hub_manager.view.CourseContentActivity" android:exported="true"/>
         <activity android:name="com.example.course_hub_manager.view.MyCoursesActivity" android:exported="true"/>
         <activity android:name="com.example.course_hub_manager.view.ProfileActivity" android:exported="true"/>
 
-        <!-- CourseDetailsActivity -->
         <activity android:name="com.example.course_hub_manager.view.CourseDetailsActivity" android:exported="true"/>
 
-        <!-- LoginActivity (Removed from LAUNCHER) -->
         <activity android:name="com.example.course_hub_manager.view.LoginActivity" android:exported="true"/>
 
     </application>

@@ -7,7 +7,6 @@
     android:padding="16dp"
     tools:context=".view.RegisterActivity">
 
-    <!-- ImageView for the logo (small and positioned at the top left) -->
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="150dp"

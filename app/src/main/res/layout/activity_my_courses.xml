@@ -5,9 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Logo ImageView -->
 
-    <!-- Title TextView -->
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="100dp"
@@ -32,7 +30,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
 
-    <!-- Placeholder Text for Courses -->
     <TextView
         android:id="@+id/text_course_info"
         android:layout_width="match_parent"
@@ -45,7 +42,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Button for Enrolling or View Details -->
     <Button
         android:id="@+id/btn_enroll"
         android:layout_width="0dp"
@@ -56,9 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"/>
 
-    <!-- Another Course Item -->
 
-    <!-- Enroll Button for Second Course -->
 
     <TextView
         android:id="@+id/text_course_info2"

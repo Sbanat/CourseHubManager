@@ -18,7 +18,7 @@ public class CategoryPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public Fragment createFragment(int position) {
-        return CourseListFragment.newInstance(categoryList.get(position).getId());  // تمرير الـ categoryId
+        return CourseListFragment.newInstance(categoryList.get(position).getId());
     }
 
     @Override

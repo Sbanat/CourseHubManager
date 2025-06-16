@@ -74,6 +74,5 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Add similar OnClickListeners for other buttons like Design, Engineering, etc.
     }
 }

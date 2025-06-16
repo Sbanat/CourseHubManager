@@ -14,11 +14,7 @@
         android:text="Lesson Title"
         android:textSize="16sp" />
 
-    <!-- Optional: Add an icon or checkbox for completion status -->
-    <!-- <CheckBox
-        android:id="@+id/cb_lesson_completed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" /> -->
+
 
 </LinearLayout>
 

@@ -4,9 +4,7 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Profile Logo -->
 
-    <!-- Profile Title -->
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="149dp"
@@ -30,9 +28,7 @@
         android:layout_marginTop="20dp"
         android:textColor="#4CAF50" />
 
-    <!-- Profile Picture -->
 
-    <!-- User Name Input -->
 
     <ImageView
         android:id="@+id/image_profile"
@@ -59,7 +55,6 @@
     android:layout_marginTop="16dp"
     android:padding="12dp" />
 
-    <!-- User Email Input -->
     <EditText
         android:id="@+id/et_email"
         android:layout_width="0dp"
@@ -73,7 +68,6 @@
     android:layout_marginTop="16dp"
     android:padding="12dp" />
 
-    <!-- User Phone Number Input -->
     <EditText
         android:id="@+id/et_phone"
         android:layout_width="0dp"
@@ -87,7 +81,6 @@
     android:layout_marginTop="16dp"
     android:padding="12dp" />
 
-    <!-- Save Button -->
     <Button
         android:id="@+id/btn_save"
         android:layout_width="0dp"
@@ -101,7 +94,6 @@
         android:backgroundTint="#4CAF50"
         android:textColor="#FFFFFF"/>
 
-    <!-- Home Button -->
     <Button
         android:id="@+id/btn_home"
         android:layout_width="0dp"

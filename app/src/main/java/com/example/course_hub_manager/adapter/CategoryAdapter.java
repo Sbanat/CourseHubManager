@@ -53,7 +53,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
         public CategoryViewHolder(View itemView) {
             super(itemView);
-            categoryName = itemView.findViewById(R.id.categoryName); // تأكد من أن id صحيح في XML
+            categoryName = itemView.findViewById(R.id.categoryName);
         }
     }
 }

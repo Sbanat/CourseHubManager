@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             app:tabMode="fixed"
             app:tabGravity="fill"
-            android:contentDescription="Tabs for selecting courses" /> <!-- إضافة contentDescription -->
+            android:contentDescription="Tabs for selecting courses" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -26,6 +26,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:contentDescription="View pager displaying courses based on selected tab" /> <!-- إضافة contentDescription -->
+        android:contentDescription="View pager displaying courses based on selected tab" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

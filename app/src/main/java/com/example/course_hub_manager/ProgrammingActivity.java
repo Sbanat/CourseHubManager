@@ -7,6 +7,6 @@ public class ProgrammingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_programming);  // أنشئ ملف XML جديد لتصميم هذه الصفحة
+        setContentView(R.layout.activity_programming);
     }
 }

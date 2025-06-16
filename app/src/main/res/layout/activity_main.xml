@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- ImageView for the logo -->
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="125dp"
@@ -17,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Button for Programming -->
     <Button
         android:id="@+id/btn_programming"
         android:layout_width="0dp"
@@ -31,7 +29,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Button for Mathematics -->
     <Button
         android:id="@+id/btn_mathematics"
         android:layout_width="0dp"
@@ -45,7 +42,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Button for Design -->
     <Button
         android:id="@+id/btn_design"
         android:layout_width="0dp"
@@ -59,7 +55,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Button for Engineering -->
     <Button
         android:id="@+id/btn_engineering"
         android:layout_width="0dp"
@@ -73,7 +68,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Button for Nursing -->
     <Button
         android:id="@+id/btn_nursing"
         android:layout_width="0dp"
@@ -87,7 +81,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Button for Science -->
     <Button
         android:id="@+id/btn_science"
         android:layout_width="0dp"
@@ -101,7 +94,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Button for Physics -->
     <Button
         android:id="@+id/btn_physics"
         android:layout_width="0dp"
@@ -115,7 +107,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- RecyclerView for courses -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewCourses"
         android:layout_width="match_parent"
@@ -125,7 +116,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- BottomNavigationView -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
