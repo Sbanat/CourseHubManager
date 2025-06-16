@@ -8,34 +8,32 @@ import androidx.lifecycle.LiveData;
 
 import com.example.course_hub_manager.data.entities.Course;
 import com.example.course_hub_manager.data.repository.CourseRepository;
+import com.example.course_hub_manager.data.entities.Category;
+import com.example.course_hub_manager.data.repository.CategoryRepository;
 
 import java.util.List;
 
 public class CourseViewModel extends AndroidViewModel {
-    private final CourseRepository repository;
+
+    private final CourseRepository courseRepository;
+    private final CategoryRepository categoryRepository;
 
     public CourseViewModel(@NonNull Application application) {
         super(application);
-        repository = new CourseRepository(application);
-    }
-
-    public void insert(Course course) {
-        repository.insert(course);
-    }
-
-    public void update(Course course) {
-        repository.update(course);
-    }
-
-    public void delete(Course course) {
-        repository.delete(course);
+        courseRepository = new CourseRepository(application);
+        categoryRepository = new CategoryRepository(application);
     }
 
     public LiveData<List<Course>> getCoursesByCategory(int categoryId) {
-        return repository.getCoursesByCategory(categoryId);
+        return courseRepository.getCoursesByCategory(categoryId);
     }
 
     public LiveData<Course> getCourseById(int id) {
-        return repository.getCourseById(id);
+        return courseRepository.getCourseById(id);
+    }
+
+    // إضافة الدالة getCategories للحصول على التصنيفات
+    public LiveData<List<Category>> getCategories() {
+        return categoryRepository.getAllCategories();
     }
 }

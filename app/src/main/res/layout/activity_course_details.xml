@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Course Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="110dp"/>
+
+        <!-- Course Image -->
+        <ImageView
+            android:id="@+id/image_course"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_course" />
+
+        <!-- Course Name -->
+        <TextView
+            android:id="@+id/text_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduction to Android Programming"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <!-- Instructor -->
+        <TextView
+            android:id="@+id/text_instructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructor: Adi Fayyad"
+            android:textSize="16sp"
+            android:paddingTop="4dp" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $50"
+            android:paddingTop="4dp" />
+
+        <!-- Students -->
+        <TextView
+            android:id="@+id/text_students"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Students: 20"
+            android:paddingTop="4dp" />
+
+        <!-- Hours -->
+        <TextView
+            android:id="@+id/text_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hours: 48"
+            android:paddingTop="4dp" />
+
+        <!-- Course Description -->
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course Description: Introduction of Android Programming"
+            android:paddingTop="8dp" />
+
+        <!-- Enroll Button -->
+        <Button
+            android:id="@+id/button_enroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enroll"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

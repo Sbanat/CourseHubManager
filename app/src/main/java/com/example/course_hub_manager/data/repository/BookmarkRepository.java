@@ -7,6 +7,7 @@ import androidx.lifecycle.LiveData;
 import com.example.course_hub_manager.data.AppDatabase;
 import com.example.course_hub_manager.data.dao.BookmarkDao;
 import com.example.course_hub_manager.data.entities.Bookmark;
+import com.example.course_hub_manager.data.entities.Course;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -35,5 +36,9 @@ public class BookmarkRepository {
 
     public LiveData<Bookmark> getBookmark(int userId, int courseId) {
         return bookmarkDao.getBookmark(userId, courseId);
+    }
+
+    public LiveData<List<Course>> getBookmarkedCourses(int userId) {
+        return bookmarkDao.getBookmarkedCourses(userId);
     }
 }

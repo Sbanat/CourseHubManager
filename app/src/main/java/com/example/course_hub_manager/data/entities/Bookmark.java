@@ -6,4 +6,9 @@ import androidx.room.Entity;
 public class Bookmark {
     public int userId;
     public int courseId;
+
+    public Bookmark(int userId, int courseId) {
+        this.userId = userId;
+        this.courseId = courseId;
+    }
 }

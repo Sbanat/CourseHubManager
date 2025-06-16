@@ -7,6 +7,7 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import com.example.course_hub_manager.data.entities.Bookmark;
+import com.example.course_hub_manager.data.entities.Course;
 import com.example.course_hub_manager.data.repository.BookmarkRepository;
 
 import java.util.List;
@@ -33,5 +34,13 @@ public class BookmarkViewModel extends AndroidViewModel {
 
     public LiveData<Bookmark> getBookmark(int userId, int courseId) {
         return repository.getBookmark(userId, courseId);
+    }
+
+    public LiveData<List<Course>> getBookmarkedCourses(int userId) {
+        return repository.getBookmarkedCourses(userId);
+    }
+
+    public void deleteBookmark(Bookmark bookmark) {
+        repository.removeBookmark(bookmark);
     }
 }

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -12,15 +11,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Course_Hub_Manager"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+
+        <!-- RegisterActivity -->
+        <activity android:name="com.example.course_hub_manager.view.RegisterActivity" android:exported="true"/>
+
+        <!-- MainActivity (Set as the LAUNCHER Activity) -->
+        <activity android:name="com.example.course_hub_manager.MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- CourseContentActivity -->
+        <activity android:name="com.example.course_hub_manager.view.CourseContentActivity" android:exported="true"/>
+        <activity android:name="com.example.course_hub_manager.view.MyCoursesActivity" android:exported="true"/>
+        <activity android:name="com.example.course_hub_manager.view.ProfileActivity" android:exported="true"/>
+
+        <!-- CourseDetailsActivity -->
+        <activity android:name="com.example.course_hub_manager.view.CourseDetailsActivity" android:exported="true"/>
+
+        <!-- LoginActivity (Removed from LAUNCHER) -->
+        <activity android:name="com.example.course_hub_manager.view.LoginActivity" android:exported="true"/>
+
     </application>
 
 </manifest>

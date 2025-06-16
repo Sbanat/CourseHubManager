@@ -31,7 +31,8 @@ public class LessonViewModel extends AndroidViewModel {
         repository.delete(lesson);
     }
 
-    public LiveData<List<Lesson>> getLessonsByCourse(int courseId) {
+    public LiveData<List<Lesson>> getLessonsByCourseId(int courseId) {
         return repository.getLessonsByCourse(courseId);
     }
-}
+    }
+

@@ -18,15 +18,19 @@ public class UserViewModel extends AndroidViewModel {
         repository = new UserRepository(application);
     }
 
-    public void insert(User user) {
-        repository.insert(user);
+    public LiveData<User> getUserByEmail(String email) {
+        return repository.getUserByEmail(email);
     }
 
     public LiveData<User> getUserById(int id) {
         return repository.getUserById(id);
     }
 
-    public User login(String email, String password) {
-        return repository.login(email, password);
+    public LiveData<User> getCurrentUser() {
+        return repository.getCurrentUser();
+    }
+
+    public void insertUser(User user) {
+        repository.insert(user);
     }
 }

@@ -7,6 +7,7 @@ import androidx.lifecycle.LiveData;
 import com.example.course_hub_manager.data.AppDatabase;
 import com.example.course_hub_manager.data.dao.EnrollmentDao;
 import com.example.course_hub_manager.data.entities.Enrollment;
+import com.example.course_hub_manager.data.entities.Course;  // استيراد فئة Course
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -21,23 +22,19 @@ public class EnrollmentRepository {
         enrollmentDao = db.enrollmentDao();
     }
 
-    public void enroll(Enrollment enrollment) {
-        executor.execute(() -> enrollmentDao.insert(enrollment));
-    }
-
-    public void update(Enrollment enrollment) {
-        executor.execute(() -> enrollmentDao.update(enrollment));
+    public void insert(Enrollment enrollment) {
+        executor.execute(() -> enrollmentDao.enroll(enrollment));
     }
 
     public void delete(Enrollment enrollment) {
         executor.execute(() -> enrollmentDao.delete(enrollment));
     }
 
-    public LiveData<List<Enrollment>> getEnrolledCourses(int userId) {
-        return enrollmentDao.getEnrollmentsByUser(userId);
+    public LiveData<Enrollment> getEnrollmentLive(int userId, int courseId) {
+        return enrollmentDao.getEnrollmentLive(userId, courseId);
     }
 
-    public LiveData<Enrollment> getEnrollment(int userId, int courseId) {
-        return enrollmentDao.getEnrollment(userId, courseId);
+    public LiveData<List<Course>> getEnrolledCoursesByStatus(int userId, String status) {
+        return enrollmentDao.getEnrolledCoursesByStatus(userId, status);
     }
 }

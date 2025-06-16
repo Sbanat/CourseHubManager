@@ -5,8 +5,25 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "categories")
 public class Category {
-    @PrimaryKey(autoGenerate = true)
-    public int id;
 
-    public String name;
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+
+    private String name;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
